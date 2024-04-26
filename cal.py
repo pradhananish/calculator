@@ -12,13 +12,19 @@ class Calculator():
         self.root=root 
         self.root.title("Calculator")
         self.root.geometry("560x460+0+0")
-        self.root.configure(background="gray")
+        self.root.configure(bg="gray")
 
         main_frame=Frame(self.root,bd=4,relief=RIDGE)
         main_frame.place(x=0,y=0,width=560,height=460)
 
-        lbl_title=Label(main_frame, text="Calculator", font=("time new roman",16,"bold"), fg="black", bd=1, relief=RIDGE)
-        lbl_title.place(x=0,y=0, width=560, height=20)
+        
+        menubar=Menu()
+        filemenu=Menu(menubar,tearoff='0')
+        menubar.add_cascade(label="File",menu=filemenu)
+        filemenu.add_command(label="Scientific")
+        filemenu.add_command(label="Standard")
+        filemenu.add_command(label="Exi5")
+
 
 
 if __name__ == '__main__':
