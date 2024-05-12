@@ -177,12 +177,6 @@ class Calc:
         self.current=math.exp(math.radians(float(textDisplay.get())))
         self.display(self.current)
 
-
-
-
-
-
-
 added_value=Calc()
 #############################Display box and buttons
 #display the solution box
