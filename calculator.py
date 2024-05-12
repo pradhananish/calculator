@@ -215,7 +215,7 @@ Button(calc, text="*", width=6, height=2, font=("Arial", 20, "bold"), bd=4, bg="
 # Row 5
 Button(calc, text="0", width=6, height=2, font=("Arial", 20, "bold"), bd=4, bg="powder blue",command=lambda:added_value.numberEnter("0")).grid(row=5, column=0, pady=1)
 Button(calc, text=".", width=6, height=2, font=("Arial", 20, "bold"), bd=4, bg="powder blue",command=lambda:added_value.numberEnter(".")).grid(row=5, column=1, pady=1)
-Button(calc, text="+/-", width=6, height=2, font=("Arial", 20, "bold"), bd=4, bg="powder blue").grid(row=5, column=2, pady=1)
+Button(calc, text="+/-", width=6, height=2, font=("Arial", 20, "bold"), bd=4, bg="powder blue",command=added_value.mathsPM).grid(row=5, column=2, pady=1)
 Button(calc, text="=", width=6, height=2, font=("Arial", 20, "bold"), bd=4, bg="powder blue",command=added_value.sum_of_total).grid(row=5, column=3, pady=1)
 
 
